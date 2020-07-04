@@ -1,5 +1,5 @@
 {
-  "name": "HX711",
+  "name": "weight",
   "keywords": "weight conversion kilo gram stone lbs ounce pound",
   "description": "Library of weight conversion functions",
   "authors":
@@ -13,7 +13,7 @@
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/RobTillaart/weight
+    "url": "https://github.com/RobTillaart/weight"
   },
   "version":"0.1.0",
   "frameworks": "arduino",
