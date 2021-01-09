@@ -2,13 +2,20 @@
 //
 //    FILE: weight.h
 //  AUTHOR: Rob Tillaart
-// VERSION: 0.1.0
+// VERSION: 0.1.1
 // PURPOSE: Collection weight conversion functions
 //     URL: https://github.com/RobTillaart/HX711
 //
-// HISTORY:
-// 0.1.0   2020-06-16 initial version
-//
+//  HISTORY:
+//  0.1.0   2020-06-16  initial version
+//  0.1.1   2021-01-09  add uarduino-ci + unit test
+
+
+#include "Arduino.h"
+
+
+#define WEIGHT_LIB_VERSION        (F("0.1.1"))
+
 
 float lbs2kilo(float lbs)     { return lbs   * 0.45359237; };
 float kilo2lbs(float kilos)   { return kilos * 2.20462262; };
@@ -28,6 +35,7 @@ float lbs2stone(float lbs)    { return lbs   * 0.0714285714; };
 float stone2kilo(float stone) { return stone * 6.35029318; };
 float kilo2stone(float kilo)  { return kilo  * 0.157473044; };
 
+
 // returns kilo
 float US2metric(float stone, float lbs, float ounce)
 {
@@ -36,6 +44,7 @@ float US2metric(float stone, float lbs, float ounce)
   kilo += ounce * (0.0625 * 0.45359237);
   return kilo;
 };
+
 
 // returns lbs;
 float metric2US(float kilo, float &stone, float &lbs, float &ounce)
