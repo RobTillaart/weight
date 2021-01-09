@@ -45,7 +45,7 @@ unittest_teardown()
   fprintf(stderr, "\n");
 }
 
-unittest(test_constructor)
+unittest(test_lbs2kilo)
 {
   fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
 
@@ -54,37 +54,73 @@ unittest(test_constructor)
     float val = random(10000) * 0.01;
     assertEqualFloat(val, lbs2kilo(kilo2lbs(val)), 0.0001);
   }
+}
+
+
+unittest(test_ounce2gram)
+{
+  fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
 
   for (int i = 0; i < 10; i++)
   {
     float val = random(10000) * 0.01;
     assertEqualFloat(val, ounce2gram(gram2ounce(val)), 0.0001);
   }
+}
+
+
+unittest(test_gram2kilo)
+{
+  fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
 
   for (int i = 0; i < 10; i++)
   {
     float val = random(10000) * 0.01;
     assertEqualFloat(val, gram2kilo(kilo2gram(val)), 0.0001);
   }
+}
+
+
+unittest(test_lbs2ounce)
+{
+  fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
 
   for (int i = 0; i < 10; i++)
   {
     float val = random(10000) * 0.01;
     assertEqualFloat(val, lbs2ounce(ounce2lbs(val)), 0.0001);
   }
+}
+
+
+unittest(test_stone2lbs)
+{
+  fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
 
   for (int i = 0; i < 10; i++)
   {
     float val = random(10000) * 0.01;
     assertEqualFloat(val, stone2lbs(lbs2stone(val)), 0.0001);
   }
+}
+
+
+unittest(test_stone2kilo)
+{
+  fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
 
   for (int i = 0; i < 10; i++)
   {
     float val = random(10000) * 0.01;
     assertEqualFloat(val, stone2kilo(kilo2stone(val)), 0.0001);
   }
-  
+}
+
+
+unittest(test_US2metric)
+{
+  fprintf(stderr, "VERSION: %s\n", WEIGHT_LIB_VERSION);
+
   for (int i = 0; i < 10; i++)
   {
     float stone = random(10);
@@ -98,8 +134,8 @@ unittest(test_constructor)
     fprintf(stderr, "%f lbs + ", lbs);
     fprintf(stderr, "%f ounce\n", ounce);
   }
-
 }
+
 
 unittest_main()
 
