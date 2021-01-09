@@ -129,7 +129,7 @@ unittest(test_US2metric)
     float kilo  = US2metric(stone, lbs, ounce);
     float val   = kilo2lbs(kilo);    
     assertEqualFloat(val, metric2US(kilo, stone, lbs, ounce), 0.0001);
-    fprintf(stderr, "%f kilo = ", kilo);
+    fprintf(stderr, "\t%f kilo = ", kilo);
     fprintf(stderr, "%f stone +", stone);
     fprintf(stderr, "%f lbs + ", lbs);
     fprintf(stderr, "%f ounce\n", ounce);
