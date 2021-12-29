@@ -57,8 +57,9 @@ See examples
 
 ## Future (TBD)
 
-- mass of all elements - 
-  - an array of floats 
+- improve documentation
+- mass of all elements
+  - an array of floats
   - a compressed format with access function (1 byte/ element)
   - constants e.g. MASS_OXYGEN
 - molarity functions
