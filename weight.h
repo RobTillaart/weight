@@ -62,7 +62,7 @@ float metric2US(float kilo, float &stone, float &lbs, float &ounce)
 class weightConvertor
 {
 public:
-  weightConverter()                    { _w = 0; };
+  weightConvertor()                    { _w = 0; };
 
   //  SETTERS
   void setKilogram(float value = 0)    { _w = value * 1000; };
@@ -87,7 +87,7 @@ public:
   //  GETTERS
   float getKilogram()   { return _w * 0.001; }
   float getGram()       { return _w; }
-  float getLBS()        { return _w * 0.00220462262185 }
+  float getLBS()        { return _w * 0.00220462262185; }
   float getStone()      { return _w * 0.000157473044418;}
   float getOunce()      { return _w * 0.03527396195;  }
   float getLongTonUK()  { return _w * 9.84206527611e-7;};
@@ -106,7 +106,7 @@ public:
 
   private:
     float _w;  //   grams
-}
+};
 
 
 // -- END OF FILE --
