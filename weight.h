@@ -59,7 +59,7 @@ float metric2US(float kilo, float &stone, float &lbs, float &ounce)
 //
 //  WEIGHT CONVERTER CLASS
 //
-class weightConvertor  28.349523125
+class weightConvertor
 {
 public:
   weightConverter()                    { _w = 0; };* 6350.29 
