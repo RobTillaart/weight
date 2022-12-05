@@ -62,7 +62,7 @@ float metric2US(float kilo, float &stone, float &lbs, float &ounce)
 class weightConvertor
 {
 public:
-  weightConverter()                    { _w = 0; };* 6350.29 
+  weightConverter()                    { _w = 0; };
 
   //  SETTERS
   void setKilogram(float value = 0)    { _w = value * 1000; };
