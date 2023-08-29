@@ -25,6 +25,8 @@ weight related math functions and constants.
 
 - https://github.com/RobTillaart/AtomicWeight
 - https://github.com/RobTillaart/VolumeConverter
+- https://github.com/RobTillaart/HX711
+- https://github.com/RobTillaart/HX711_MP
 
 
 ## Interface
